@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+  <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container-fluid container-lg mt-5 p-lg-5">
+    <h3 class="display-5 text-center mt-3">Eye Witness Report</h3>
+    <div class="row px-lg-5">
+      <div class="col-lg-12 px-lg-5">
+        <form action="" class="mx-auto pb-5" id="form">
+          <div class="form">
+            <div class="form-floating my-3">
+              <input type="text" id="name" name="name" placeholder="Enter name" class="form-control">
+              <label for="name" class="form-label">Name:</label>
+            </div>
+            <div class="form-floating my-3">
+              <input type="text" id="num" name="num" placeholder="Paa" class="form-control">
+              <label for="num" class="form-label">Phone Number:</label>
+            </div>
+            <div class="form-floating my-3">
+              <input type="text" id="event" name="event" placeholder="Phone" class="form-control">
+              <label for="event" class="form-label">Event:</label>
+            </div>
+            <div class="my-3">
+              <textarea class="form-control" name="details" id="details" rows="7" placeholder="Details"></textarea>
+            </div>
+            
+            <div class="button d-flex justify-content-end mt-5 ">
+              <button type="button" class="btn btn-warning" id="hide">Hide data</button>
+              <button type="button" class="btn btn-outline-secondary mx-5" id="get">Get data</button>
+              <button type="button" class="btn btn-primary" id="sub">Submit</button>         
+            </div>
+          </div>
+        </form>
+        <p id="show"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
